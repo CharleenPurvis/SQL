@@ -1,0 +1,16 @@
+CREATE TABLE candles (id INTEGER PRIMARY KEY, scent TEXT, quantity INTEGER, price TEXT, color TEXT); 
+
+INSERT into candles VALUES (1, "Georgia Peach", 12, 16.00, "Orange");
+SELECT * FROM candles;
+INSERT into candles VALUES (2, "Strawberry" , 4, 24.00, "Red");
+INSERT into candles VALUES (3, "Ocean Mist" , 8, 32.00, "Turquoise");
+SELECT * FROM candles;
+
+select * from candles order by price;
+select max (quantity) from candles
+
+
+
+
+--Select all candle scents and put them in order by price
+--Select candle scent with the highest quantity
